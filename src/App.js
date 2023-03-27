@@ -1,14 +1,16 @@
+import Cart from "./Component/Cart/Cart";
 import Header from "./Component/Layout/Header";
 import Meal from "./Component/Meals/Meal";
 
 function App() {
   return (
-    <div>
+    <>
+      <Cart/>
       <Header/>
       <main>
       <Meal/>
       </main>
-    </div>
+    </>
   );
 }
 
