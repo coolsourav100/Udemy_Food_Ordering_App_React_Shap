@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
   }
-  .mealsList {
+  /* .mealsList {
     background: white;
     border-radius: 6px;
     margin-top: -9px;
@@ -26,7 +26,7 @@
   }
   .mealsList h5{
     margin : 10px
-  }
+  } */
   
   @keyframes meals-appear {
     from {
