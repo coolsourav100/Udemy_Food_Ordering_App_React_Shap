@@ -6,11 +6,11 @@ import classes from './HeaderCartButton.module.css'
 
 const HeaderCartButton = (props) => {
     const cartCtx = useContext(CartContext);
-    console.log(cartCtx)
-    const noOfCartItem = cartCtx.item.reduce((currentNumber, item)=>{
-        return (currentNumber + item.amount)
-    },0)
+    // const noOfCartItem = cartCtx.item.reduce((currentNumber, item)=>{
+    //     return (currentNumber + item.amount)
+    // },0)
     
+    // console.log(cartCtx.item.length)
     
   return (
     
@@ -19,7 +19,7 @@ const HeaderCartButton = (props) => {
     <CartIcon/>
         </span>
         <span>Your Cart</span>
-        <span className={classes.badge}>{noOfCartItem}</span>
+        <span className={classes.badge}>{cartCtx.item.length}</span>
     </button>
     
   )
